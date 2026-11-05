@@ -1,0 +1,86 @@
+
+img {
+    display: block;
+    max-width: 70%;
+    height: auto;
+}
+
+
+.imagem-intro img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.imagem-resp img, 
+.imagem-fig img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.imagem-rec img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center;
+    /* cover - Preenche a caixa, aceitando recorte */
+    /* contain - mostra o conteudo inteiro
+       fill - Preenche sem preservar a proporção */
+    /* scale-down escolhe entre none e contain para evitar ampliar */
+}
+
+
+.Flex {
+    display: flex;
+}
+
+
+.imagem-capa img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.imagem-ava img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
+.Imagem-seven img {
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.18);
+    transition: transform .25s ease, filter .25s ease;
+}
+
+.Imagem-seven img:hover {
+    transform: scale(1.05);
+    filter: sepia(1.7);
+}
+
+/* Filtros a utilizar */
+/* grayscale(1)
+sepia(.7)
+brightness(.85)
+contrast(1.15)
+saturate(1.2)
+blur(4px) */
+
+.imagem-gal-pr {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.imagem-gal img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 12px;
+}
