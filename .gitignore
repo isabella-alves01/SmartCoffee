@@ -1,0 +1,7 @@
+# Arquivos que serão ignorados
+
+*.log 
+.vscode/
+thumbs.db
+.DS_Store
+*.mp3
